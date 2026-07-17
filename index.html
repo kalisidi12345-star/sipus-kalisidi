@@ -60,7 +60,7 @@
       linear-gradient(135deg, rgba(45,29,17,0.88), rgba(107,66,38,0.82) 70%);
   }
   .brand, header.topbar > nav.tabs{ position:relative; z-index:2; }
-  .brand{ display:flex; align-items:center; gap:16px; }
+  .brand{ display:flex; align-items:center; gap:16px; flex-wrap:wrap; row-gap:14px; }
   .brand-mark{
     width:60px;height:60px;border-radius:12px;
     background:var(--ochre);
@@ -226,6 +226,14 @@
 
   .loading-row td{ text-align:center; padding:36px; color:#9C8E76; }
   .footer-note{ text-align:center; font-size:12px; color:#A79978; padding:28px 24px 20px; border-top:1px dashed var(--line); margin-top:8px; }
+  @media(max-width:600px){
+    header.topbar{ padding:24px 22px; }
+    .brand-text h1{ font-size:21px; }
+    .kkn-logo{ width:64px; height:64px; }
+    .kkn-text strong{ font-size:19px; }
+    .kkn-text span{ font-size:12.5px; }
+    .brand-divider{ display:none; }
+  }
 </style>
 </head>
 <body>
